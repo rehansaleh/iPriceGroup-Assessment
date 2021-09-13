@@ -10,4 +10,5 @@ module.exports = Object.freeze({
   UNDEFINED: "undefined",
   TYPE_CSV: "csv",
   EMPTY_STRING: "",
+  COMMA: ",",
 });

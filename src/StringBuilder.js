@@ -1,11 +1,16 @@
-const { PROMPT_EMPTY_STRING_MESSAGE } = require("./common/constants");
+const {
+  PROMPT_EMPTY_STRING_MESSAGE,
+  EMPTY_STRING,
+  COMMA,
+  TYPE_CSV,
+} = require("./common/constants");
 const { Utils } = require("./common/Utilities");
 const { SuccessResponse, ErrorResponse } = require("./models");
 
 const convertToCsv = async (inputString) => {
   // Split a string by spaces and then join by commas to create CSV input
-  const csvString = inputString.split("").join(",");
-  return await Utils.writeToDisk("csv", csvString);
+  const csvString = inputString.split(EMPTY_STRING).join(COMMA);
+  return await Utils.writeToDisk(TYPE_CSV, csvString);
 };
 
 const StringBuilder = class {

@@ -12,5 +12,5 @@ On your project directory open a command line interface (`cmd`) and follow the s
 
 ## Run the test cases
 
-- Enter `npm run test` in the command prompot to run the test cases
+- Enter `npm run test` in the command prompt to run the test cases
 
